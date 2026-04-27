@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color:cyan;
+}
+
+button {
+    background:cyan;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.me{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 30px #38bdf8;
+    transition: 0.9s;
+    display: block;
+    margin: 10px auto;
+    
+    left: 0;
+}
+.logo{
+    background:linear-gradient(270deg, #38bdf8, #a855f7)#020617;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 50%;
+}
+
+/* LOGO */
+.logo {
+    font-size: 30px;
+    letter-spacing: 0px;
+    color: white;
+    margin-top: 5px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
+
+/* X harfini alohida qilish */
+.logo span {
+    color: #38bdf8;
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+/* tagline */
+.tagline {
+    color: #22c55e;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/* hover effekt */
+.logo:hover {
+    transform: scale(1.7);
+    transition: 0.3s;
+}
+.logo span {
+    background: linear-gradient(270deg, #38bdf8, #a855f7, #22c55e);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+.ks {
+    letter-spacing: 2px;
+    margin :2px;
+    padding: 20x;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.0s;
+}
+.line {
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    border: none;
+    margin: 20px auto;
+}
+.about {
+    display: block;
+    margin: 10px auto;
+    position: left;
+    left: 0;
+    align-items: center;
+    gap: 30px;
+    color :#94a3b8;
+}
+.results {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.result-box {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+/* rasm */
+.result-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* matn */
+.result-box p {
+    margin-top: 10px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* hover effekt */
+.result-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.results-title {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.results-title {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.natija::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    display: block;
+    margin: 10px auto;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
